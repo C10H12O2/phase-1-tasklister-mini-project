@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     event.target.reset();
   });
+});
+
+function buildToDo(task) {
+  const li = document.createElement('li');
+  li.textContent = task
+
+  const taskList = document.getElementById('tasks');
+  taskList.appendChild(li);
+}
